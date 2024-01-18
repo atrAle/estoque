@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "36d7e75f-8195-4c3d-a2e8-ddbf836b992a",
+		"name": "API de Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32429328"
+	},
+	"item": [
+		{
+			"name": "Criar Produto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\":\"chocolate blend\",\r\n    \"preco\":\"70,00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Todos os Produtos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obter Produto pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/hhJOgwRbxPq24N7Ygpp2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						"hhJOgwRbxPq24N7Ygpp2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Produto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome_produto\":\"chocolate meio amargo\",\r\n    \"preco\":\"25,00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/hhJOgwRbxPq24N7Ygpp2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						"hhJOgwRbxPq24N7Ygpp2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Produto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/produtos/MGXLZrL0NGF78IH8pQFa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"produtos",
+						"MGXLZrL0NGF78IH8pQFa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
